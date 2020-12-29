@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Form from './components/Form'
+import Input from './components/Input'
 import Todolist from './components/Todolist'
 
 function App() {
   
   return (
-    <div className="app">
+    <div className="App">
       <h1>Todo App</h1>
-      <Form />
+      <Input />
       <Todolist />
     </div>
   );

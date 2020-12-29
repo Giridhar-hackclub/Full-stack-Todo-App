@@ -14,7 +14,6 @@ export default function Todolist(){
       for(let id in todos){
         todoList.push({id,...todos[id]})
       }
-      console.log(todoList)
       setTodoList(todoList)
     })
   }, [])
@@ -25,4 +24,4 @@ export default function Todolist(){
       {todoList ? todoList.map((todo, i) => <Todo todo={todo} key={i}/>) : ''}
     </div>
   )
-}
+} 

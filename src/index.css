@@ -71,7 +71,7 @@ input[type=checkbox]:checked, .completed{
   text-decoration: strike-through;
 }
 
-.app{
+.App{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,14 +130,10 @@ input[type=text]:focus, input[type=text]:active{
   font-size: 20px;
 }
 @media screen and (max-width: 1024px){
-  input, .add-btn {
+  input[type=text], .add-btn {
     display: inline-block;
     margin: 0;
     box-sizing: border-box;
-  }
-  input {
-    width: 100%;
-    padding: 10px;
   }
   .placeholder{
     font-size: 17px;

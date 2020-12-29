@@ -25,8 +25,8 @@ export default function Todo({ todo }){
   return(
     <div className="todo-item">
       <div className="task">
-        <input type="checkbox" onClick={completeTodo} />
-        <p style={todo.completed ? completedStyle:null}>{todo.title}</p>
+        <input type="checkbox" onClick={completeTodo} checked={todo.completed} />
+        <p style={todo.completed ? completedStyle:null}>{todo.task}</p>
       </div>
       <div className="buttons">
         <button className="del-btn" onClick={deleteTodo}><i className="fa fa-trash" aria-hidden="true"></i></button>
